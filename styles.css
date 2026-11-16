@@ -589,14 +589,14 @@ button { font: inherit; border: 0; padding: 0; background: none; cursor: pointer
   .recap__list { gap: 16px; }
 
   .archive { margin-top: 56px; }
-  .archive__card { height: auto; padding: 40px 24px 300px; }
+  .archive__card { height: auto; padding: 40px 24px 0; display: flex; flex-direction: column; align-items: flex-start; }
   .archive__card .eyebrow, .archive__card h2, .archive__desc, .archive__card .btn-pill { position: relative; left: 0; top: 0; width: auto; }
   .archive__card h2 { font-size: 32px; margin-top: 12px; }
   .archive__desc { font-size: 16px; margin-top: 16px; }
   .archive__desc br { display: none; }
   .archive__card .btn-pill { width: 200px; margin-top: 24px; }
-  .archive__image { left: -20px; top: auto; bottom: 0; width: 574px; height: 280px; }
-  .archive__fade { top: auto; bottom: 0; height: 90px; width: 100%; }
+  .archive__image { position: relative; left: 50%; top: 0; width: 125%; height: auto; aspect-ratio: 907 / 442; margin-top: 28px; transform: translateX(-53%); order: 5; flex: none; }
+  .archive__fade { top: auto; bottom: 0; height: 70px; width: 100%; z-index: 1; }
 
   .stories { margin-top: 56px; }
   .stories__title { width: auto; font-size: 30px; line-height: 1.2; }
@@ -605,7 +605,7 @@ button { font: inherit; border: 0; padding: 0; background: none; cursor: pointer
   .story, .story--main, .story--last { width: 100%; padding: 20px; }
   .story__inner, .story--main .story__inner { width: auto; }
   .story__name, .story--main .story__name { width: auto; }
-  .stories__blur { display: none; }
+  .stories__blur, .stories__arrow { display: none; }
 
   .cta { margin-top: 56px; }
   .cta__card { height: auto; padding: 56px 16px; border-radius: 32px; }
